@@ -1,5 +1,6 @@
 FROM alpine:latest
-MAINTAINER Hidetoshi Imai <hidepin@gmail.com>
+
+LABEL maintainer "Hidetoshi Imai <hidepin@gmail.com>"
 
 RUN apk add --update \
     openssl-dev \
