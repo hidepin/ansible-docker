@@ -8,9 +8,11 @@ RUN apk add --update \
     musl-dev \
     python-dev \
     gcc \
+    make \
     py-pip \
     sshpass \
     tzdata && \
+    pip install cffi==1.11.2 && \
     pip install ansible==2.2.0.0 && \
     cp /usr/share/zoneinfo/Asia/Tokyo /etc/localtime && \
     echo "Asia/Tokyo" >  /etc/timezone
